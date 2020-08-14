@@ -1,3 +1,5 @@
+// random call https://www.themealdb.com/api/json/v2/9973533/randomselection.php
+
 import React, { Component } from "react";
 
 class Search extends Component {
@@ -16,6 +18,8 @@ class Search extends Component {
 
   makeApiCall = searchInput => {
     var searchUrl = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchInput}`;
+    // search url  = https://www.themealdb.com/api/json/v1/1/search.php?s=
+    //by ID = https://www.themealdb.com/api/json/v1/1/lookup.php?i=
     fetch(searchUrl)
       .then(response => {
         return response.json();
