@@ -1,11 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Search from './components/Search';
 
 function App() {
   return (
     <Router>
       <div>
-        <h1>test</h1>
+        <Search />
       </div>
     </Router>
   );
