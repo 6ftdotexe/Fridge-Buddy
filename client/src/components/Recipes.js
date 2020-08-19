@@ -35,7 +35,6 @@ export default function Recipes(props) {
             Most Recent Search here!{" "}
           </ListSubheader>
         </GridListTile>
-
         {props.recipes.map((recipe) => (
           <GridListTile key={recipe.recipe.image}>
             <img
@@ -60,13 +59,14 @@ export default function Recipes(props) {
                     }}
                   >
                     {" "}
-                    <p>Take a look</p>
+                    <p>View</p>
                   </Link>
                 </IconButton>
               }
             />
           </GridListTile>
         ))}
+
       </GridList>
     </div>
   );

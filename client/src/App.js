@@ -1,26 +1,15 @@
 import React, { Component } from "react";
-import { withStyles } from "@material-ui/core/styles";
-import { Grid } from "@material-ui/core/grid";
-import { Paper } from "@material-ui/core/paper";
+
+import Grid from "@material-ui/core/grid";
+import Paper from "@material-ui/core/paper";
+import styles from './styles/mainStyles.css'
 
 import Form from "./components/Form";
 import Recipes from "./components/Recipes";
 import GroceryList from "./components/List";
 const APP_ID = "4fd7f07d";
 const APP_KEY = "6366fb53422c0710914acf9000b5c1d6";
-const styles = (theme) => ({
-  mainContainer: {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    overflow: "hidden",
-    backgroundColor: theme.palette.background.paper,
-  },
-  changeName: {
-    width: 700,
-    height: 700,
-  },
-});
+
 class App extends Component {
   state = { recipes: [] };
 
@@ -50,24 +39,35 @@ class App extends Component {
     localStorage.setItem("recipes", recipes);
   };
 
+
   //I need to add the styles and change it up here.
   render() {
-    const { classes } = this.props;
+   
+
     return (
       <>
         <div className="App_Nav">Here is the Navigation</div>
-        <div className="App">
-          <header className="App-header">
-            <h1 className="App-title">Recipe Search</h1>
-          </header>
+        <Grid container spacing={2}>{/* container Grid */}
 
-          {/* //here is a prop */}
-          <Form getRecipe={this.getRecipe} />
-          <div>
+
+          <Grid item xs={12}>{/* Row #1 up to 12 spaces */}
+
+            <Paper >
+              <h1 className="App-title">Recipe Search</h1>
+              <Form getRecipe={this.getRecipe} />
+            </Paper>
+          </Grid>{/* End Of Row #1 */}
+
+
+          <Grid item xs={3} >
             <GroceryList />
+
+          </Grid>
+          <Grid item xs={6}>
             <Recipes recipes={this.state.recipes} />
-          </div>
-        </div>
+          </Grid>
+        </Grid>
+
       </>
     );
   }
