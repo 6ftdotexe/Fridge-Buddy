@@ -57,22 +57,3 @@ export default function Recipes(props) {
         </div>
     );
 }
-// const Recipes = (props) => (
-//     <div>
-//         {props.recipes.map(
-//             (recipe) => {
-
-//                 return (
-//                     <div key={recipe.recipe.label} >
-//                         <h3> {recipe.recipe.label}</h3>
-//                         <img src={recipe.recipe.image} alt={recipe.recipe.label} />
-//                         <p></p>
-//                     </div>
-
-//                 );
-//             }
-//         )}
-//     </div>
-
-// )
-// export default Recipes;
