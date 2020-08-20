@@ -1,3 +1,42 @@
-body{
-    background:blue;
+body {
+  color: red;
+}
+
+.recipesearch {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  height: 40px;
+}
+
+.jumbotron {
+  background-image: url("../images/burger.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 650px;
+}
+
+input {
+  width: 500px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.searchname {
+  padding-top: 165px;
+  text-align: center;
+  color: white;
+  font-family: "Indie Flower", cursive;
+  font-size: 6rem;
+}
+
+.recipebutton {
+  color: black;
+}
+.button {
+  justify-content: center;
+  align-content: center;
+  display: flex;
 }
