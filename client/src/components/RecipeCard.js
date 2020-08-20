@@ -72,6 +72,8 @@ export default function RecipeCard() {
                 variant="contained"
                 color="primary"
                 href="#contained-buttons"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Play Video Instructions
               </Button>
