@@ -1,11 +1,19 @@
-import React from 'react';
-const URL = 'https://api.edamam.com/search?q=chicken+and=parm&';
+import React from "react";
 
-const Form = props => (
-    <form onSubmit={props.getRecipe}>
-        <input type="text" name="recipeName" />
-        <button>Search</button>
-    </form>
+const Form = (props) => (
+  <div className="jumbotron">
+    <div className="lookuprecipe">
+      <h1 className="searchname">
+        <span> Look up Recipe </span>
+      </h1>
+    </div>
+    <div className="formname">
+      <form className="recipesearch" onSubmit={props.getRecipe}>
+        <input type="text" placeholder="I'm Hungry For?" name="recipeName" />
 
-)
+        <button className="recipebutton">Search</button>
+      </form>
+    </div>
+  </div>
+);
 export default Form;
