@@ -70,7 +70,11 @@ export default function RecipeCard() {
               <Button
                 variant="contained"
                 color="primary"
+
                 href="https://linkedin.com/in/williamntrout"
+
+                href="#contained-buttons"
+
                 target="_blank"
                 rel="noopener noreferrer"
               >
