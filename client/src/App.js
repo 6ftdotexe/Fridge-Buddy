@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-
 import Grid from "@material-ui/core/grid";
 import Paper from "@material-ui/core/paper";
 import styles from './styles/mainStyles.css'
-
 import Form from "./components/Form";
 import Recipes from "./components/Recipes";
 import GroceryList from "./components/List";
@@ -42,8 +40,6 @@ class App extends Component {
 
   //I need to add the styles and change it up here.
   render() {
-   
-
     return (
       <>
         <div className="App_Nav">Here is the Navigation</div>
