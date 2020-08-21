@@ -1,5 +1,4 @@
-import React, { Component } from "./node_modules/react";
-
+import React, { Component } from "react";
 
 class About extends Component {
   handleClick(e) {
@@ -9,7 +8,7 @@ class About extends Component {
 
   render() {
     return (
-      <div style={bg}>
+      <div>
         <Header />
         <AboutContent />
         <Footer />
