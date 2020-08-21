@@ -66,7 +66,6 @@ export default function Recipes(props) {
             />
           </GridListTile>
         ))}
-
       </GridList>
     </div>
   );

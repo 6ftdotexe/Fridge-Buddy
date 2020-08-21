@@ -1,3 +1,8 @@
+
+// all of this is just place holder as it does not go on the app.js page
+
+
+
 import React, { Component } from "react";
 import Grid from "@material-ui/core/grid";
 import Paper from "@material-ui/core/paper";

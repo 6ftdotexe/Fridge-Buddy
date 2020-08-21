@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Main extends Component {
+class Login extends Component {
   handleClick(e) {
     e.preventDefault();
     window.open(About);
@@ -16,5 +16,4 @@ class Main extends Component {
     );
   }
 }
-
-export default Main;
+export default Login;

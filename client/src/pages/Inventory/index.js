@@ -1,4 +1,4 @@
-import React, { Component } from "./node_modules/react";
+import React, { Component } from "react";
 
 class Inventory extends Component {
   handleClick(e) {
@@ -8,7 +8,7 @@ class Inventory extends Component {
 
   render() {
     return (
-      <div style={bg}>
+      <div>
         <Header />
         <AboutContent />
         <Footer />
