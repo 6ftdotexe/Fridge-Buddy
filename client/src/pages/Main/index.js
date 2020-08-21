@@ -3,15 +3,19 @@ import React, { Component } from "react";
 class Main extends Component {
   handleClick(e) {
     e.preventDefault();
-    window.open(About);
+    // window.open(About);
   }
 
   render() {
     return (
       <div>
-        <Header />
+
+        {/* <Header />
+
+
         <AboutContent />
-        <Footer />
+        <Footer /> */}
+        HOME PAGE
       </div>
     );
   }

@@ -3,15 +3,18 @@ import React, { Component } from "react";
 class Inventory extends Component {
   handleClick(e) {
     e.preventDefault();
-    window.open(About);
+    // window.open(About);
   }
 
   render() {
     return (
       <div>
-        <Header />
+
+        {/* <Header />
+
         <AboutContent />
-        <Footer />
+        <Footer /> */}
+        INVENTORY PAGE
       </div>
     );
   }

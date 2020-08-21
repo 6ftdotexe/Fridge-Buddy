@@ -21,6 +21,11 @@ import {
   Typography,
   Button,
 } from "@material-ui/core";
+import { BrowserRouter, Route, Link } from "react-router-dom";
+import About from "./pages/About";
+import Main from "./pages/Main";
+import Favorites from "./pages/Favorites";
+import Inventory from "./pages/Inventory";
 import { useAuth0 } from "@auth0/auth0-react";
 
 const APP_ID = "4fd7f07d";
@@ -72,18 +77,32 @@ class App extends Component {
                 <LogoutButton />
                 <Profile />
               </Typography>
-              <Button color="inherit">
-                <h3>Home</h3>
-              </Button>
-              <Button color="inherit">
-                <h3>Favorites</h3>
-              </Button>
-              <Button color="inherit">
-                <h3>Inventory</h3>
-              </Button>
-              <Button color="inherit">
-                <h3>About</h3>
-              </Button>
+              <BrowserRouter>
+                <Route path="/" component={Main} />
+                <Route path="/about" component={About} />
+                <Route path="/favorites" component={Favorites} />
+                <Route path="/inventory" component={Inventory} />v
+                <Link to="/">
+                  <Button color="inherit">
+                    <h3>Home</h3>
+                  </Button>
+                </Link>
+                <Link to="/favorites">
+                  <Button color="inherit">
+                    <h3>Favorites</h3>
+                  </Button>
+                </Link>
+                <Link to="/inventory">
+                  <Button color="inherit">
+                    <h3>Inventory</h3>
+                  </Button>
+                </Link>
+                <Link to="/about">
+                  <Button color="inherit">
+                    <h3>About</h3>
+                  </Button>
+                </Link>
+              </BrowserRouter>
             </Toolbar>
           </AppBar>
         </div>
