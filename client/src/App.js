@@ -4,8 +4,8 @@
 
 
 import React, { Component } from "react";
-import Grid from "@material-ui/core/grid";
-import Paper from "@material-ui/core/paper";
+import Grid from "@material-ui/core/Grid";
+import Paper from "@material-ui/core/Paper";
 import Image from "./images/tba.jpg";
 import styles from "./styles/mainStyles.css";
 import Form from "./components/Form";
@@ -13,6 +13,7 @@ import Recipes from "./components/Recipes";
 import GroceryList from "./components/List";
 import LoginButton from "./components/Authentication/LoginButton";
 import LogoutButton from "./components/Authentication/LogoutButton";
+import Profile from "./components/Authentication/Profile";
 import {
   AppBar,
   Toolbar,
@@ -20,6 +21,7 @@ import {
   Typography,
   Button,
 } from "@material-ui/core";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const APP_ID = "4fd7f07d";
 const APP_KEY = "6366fb53422c0710914acf9000b5c1d6";
@@ -68,6 +70,7 @@ class App extends Component {
               <Typography variant="h6" style={{ flexGrow: 1 }}>
                 <LoginButton />
                 <LogoutButton />
+                <Profile />
               </Typography>
               <Button color="inherit">
                 <h3>Home</h3>
