@@ -8,6 +8,7 @@ import Recipes from "./components/Recipes";
 import GroceryList from "./components/List";
 import LoginButton from "./components/Authentication/LoginButton";
 import LogoutButton from "./components/Authentication/LogoutButton";
+import Profile from "./components/Authentication/Profile";
 import {
   AppBar,
   Toolbar,
@@ -15,6 +16,7 @@ import {
   Typography,
   Button,
 } from "@material-ui/core";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const APP_ID = "4fd7f07d";
 const APP_KEY = "6366fb53422c0710914acf9000b5c1d6";
@@ -63,6 +65,7 @@ class App extends Component {
               <Typography variant="h6" style={{ flexGrow: 1 }}>
                 <LoginButton />
                 <LogoutButton />
+                <Profile />
               </Typography>
               <Button color="inherit">
                 <h3>Home</h3>
