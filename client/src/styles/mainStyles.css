@@ -22,6 +22,12 @@ input {
   width: 500px;
   height: 50px;
   border-radius: 15px;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  font-family: "Indie Flower", cursive;
+  font-weight: 900;
+  font-size: 2rem;
 }
 
 .searchname {
@@ -29,14 +35,20 @@ input {
   text-align: center;
   color: white;
   font-family: "Indie Flower", cursive;
-  font-size: 6rem;
+  font-size: 7rem;
 }
 
 .recipebutton {
-  color: black;
-}
-.button {
-  justify-content: center;
-  align-content: center;
-  display: flex;
+  display: inline-block;
+  padding: 0.5em 3em;
+  border: 0.16em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 15px;
 }
