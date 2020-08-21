@@ -6,6 +6,8 @@ import styles from "./styles/mainStyles.css";
 import Form from "./components/Form";
 import Recipes from "./components/Recipes";
 import GroceryList from "./components/List";
+import LoginButton from "./components/Authentication/LoginButton";
+import LogoutButton from "./components/Authentication/LogoutButton";
 import {
   AppBar,
   Toolbar,
@@ -59,8 +61,8 @@ class App extends Component {
                 aria-label="menu"
               ></IconButton>
               <Typography variant="h6" style={{ flexGrow: 1 }}>
-                <Button color="inherit">Login</Button>
-                <Button color="inherit">Register</Button>
+                <LoginButton />
+                <LogoutButton />
               </Typography>
               <Button color="inherit">
                 <h3>Home</h3>
