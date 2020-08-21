@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import Grid from "@material-ui/core/grid";
-import Paper from "@material-ui/core/paper";
+import Grid from "@material-ui/core/Grid";
+import Paper from "@material-ui/core/Paper";
 import Image from "./images/tba.jpg";
 import styles from "./styles/mainStyles.css";
 import Form from "./components/Form";
 import Recipes from "./components/Recipes";
 import GroceryList from "./components/List";
+import LoginButton from "./components/Authentication/LoginButton";
+import LogoutButton from "./components/Authentication/LogoutButton";
 import {
   AppBar,
   Toolbar,
@@ -13,6 +15,11 @@ import {
   Typography,
   Button,
 } from "@material-ui/core";
+import { BrowserRouter, Route, Link } from "react-router-dom";
+import About from "./pages/About";
+import Main from "./pages/Main";
+import Favorites from "./pages/Favorites";
+import Inventory from "./pages/Inventory";
 
 const APP_ID = "4fd7f07d";
 const APP_KEY = "6366fb53422c0710914acf9000b5c1d6";
@@ -59,21 +66,35 @@ class App extends Component {
                 aria-label="menu"
               ></IconButton>
               <Typography variant="h6" style={{ flexGrow: 1 }}>
-                <Button color="inherit">Login</Button>
-                <Button color="inherit">Register</Button>
+                <LoginButton />
+                <LogoutButton />
               </Typography>
-              <Button color="inherit">
-                <h3>Home</h3>
-              </Button>
-              <Button color="inherit">
-                <h3>Favorites</h3>
-              </Button>
-              <Button color="inherit">
-                <h3>Inventory</h3>
-              </Button>
-              <Button color="inherit">
-                <h3>About</h3>
-              </Button>
+              <BrowserRouter>
+                <Route path="/" component={Main} />
+                <Route path="/about" component={About} />
+                <Route path="/favorites" component={Favorites} />
+                <Route path="/inventory" component={Inventory} />v
+                <Link to="/">
+                  <Button color="inherit">
+                    <h3>Home</h3>
+                  </Button>
+                </Link>
+                <Link to="/favorites">
+                  <Button color="inherit">
+                    <h3>Favorites</h3>
+                  </Button>
+                </Link>
+                <Link to="/inventory">
+                  <Button color="inherit">
+                    <h3>Inventory</h3>
+                  </Button>
+                </Link>
+                <Link to="/about">
+                  <Button color="inherit">
+                    <h3>About</h3>
+                  </Button>
+                </Link>
+              </BrowserRouter>
             </Toolbar>
           </AppBar>
         </div>

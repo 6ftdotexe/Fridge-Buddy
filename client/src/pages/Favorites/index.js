@@ -1,17 +1,18 @@
-import React, { Component } from "./node_modules/react";
+import React, { Component } from "react";
 
 class Favorites extends Component {
   handleClick(e) {
     e.preventDefault();
-    window.open(About);
+    // window.open(About);
   }
 
   render() {
     return (
-      <div style={bg}>
-        <Header />
+      <div>
+        {/* <Header />
         <AboutContent />
-        <Footer />
+        <Footer /> */}
+        FAVORITES PAGE
       </div>
     );
   }
