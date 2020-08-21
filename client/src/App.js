@@ -1,3 +1,8 @@
+
+// all of this is just place holder as it does not go on the app.js page
+
+
+
 import React, { Component } from "react";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
@@ -8,6 +13,7 @@ import Recipes from "./components/Recipes";
 import GroceryList from "./components/List";
 import LoginButton from "./components/Authentication/LoginButton";
 import LogoutButton from "./components/Authentication/LogoutButton";
+import Profile from "./components/Authentication/Profile";
 import {
   AppBar,
   Toolbar,
@@ -20,6 +26,7 @@ import About from "./pages/About";
 import Main from "./pages/Main";
 import Favorites from "./pages/Favorites";
 import Inventory from "./pages/Inventory";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const APP_ID = "4fd7f07d";
 const APP_KEY = "6366fb53422c0710914acf9000b5c1d6";
@@ -68,6 +75,7 @@ class App extends Component {
               <Typography variant="h6" style={{ flexGrow: 1 }}>
                 <LoginButton />
                 <LogoutButton />
+                <Profile />
               </Typography>
               <BrowserRouter>
                 <Route path="/" component={Main} />

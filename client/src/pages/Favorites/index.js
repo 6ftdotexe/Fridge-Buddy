@@ -10,6 +10,8 @@ class Favorites extends Component {
     return (
       <div>
         {/* <Header />
+ 
+
         <AboutContent />
         <Footer /> */}
         FAVORITES PAGE

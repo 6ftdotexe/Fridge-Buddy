@@ -1,23 +1,19 @@
 import React, { Component } from "react";
 
-class Inventory extends Component {
+class Login extends Component {
   handleClick(e) {
     e.preventDefault();
-    // window.open(About);
+    window.open(About);
   }
 
   render() {
     return (
       <div>
-
-        {/* <Header />
-
+        <Header />
         <AboutContent />
-        <Footer /> */}
-        INVENTORY PAGE
+        <Footer />
       </div>
     );
   }
 }
-
-export default Inventory;
+export default Login;

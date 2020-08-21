@@ -10,6 +10,7 @@ class About extends Component {
     return (
       <div>
         <p>ABOUT PAGE</p>
+       
       </div>
     );
   }
