@@ -32,16 +32,6 @@ const NavBar = () => {
                             <h3>Home</h3>
                         </Button>
                     </Link>
-                    <Link to="/favorites">
-                        <Button color="inherit">
-                            <h3>Favorites</h3>
-                        </Button>
-                    </Link>
-                    <Link to="/inventory">
-                        <Button color="inherit">
-                            <h3>Inventory</h3>
-                        </Button>
-                    </Link>
                     <Link to="/about">
                         <Button color="inherit">
                             <h3>About</h3>
@@ -49,7 +39,7 @@ const NavBar = () => {
                     </Link>
                 </Toolbar>
             </AppBar>
-        </div>
+        </div >
     )
 }
 export default NavBar;
