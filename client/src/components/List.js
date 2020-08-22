@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import '../styles/mainStyles.css'
 class GroceryList extends Component {
     constructor(props) {
         super(props);
@@ -47,10 +47,10 @@ class GroceryList extends Component {
 
 
             <div>
-
-                <div>
+                <h3 className="heading">Grocery List</h3>
+                <div className="groceryList" >
                     {this.state.groceryItems.map((item, index) => (
-                        <li key={item} >
+                        <li key={item}  >
                             <input type="checkbox" />{item}
 
                             <button onClick={() => this.removeItem(index)}>X</button>
@@ -64,7 +64,7 @@ class GroceryList extends Component {
                         placeholder="Add to list"
                     />
 
-                    <button onClick={this.handleFormSubmit}>Submit</button>
+                    <button onClick={this.handleFormSubmit}>Add</button>
                 </div>
             </div >
 
