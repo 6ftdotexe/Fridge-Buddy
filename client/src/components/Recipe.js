@@ -44,7 +44,7 @@ class Recipe extends Component {
                             <h2>{recipe.label} by {recipe.source}</h2>
                             <a href={recipe.url} ><h2>Recipe found here</h2></a>
                             <h3>Cook Time: {recipe.totalTime}</h3>
-                            <img className="active__recipe" src={recipe.image} ></img>
+                            <img className="active__recipe" src={recipe.image} alt="Recipe"></img>
 
                             <button>
                                 <Link to="/">

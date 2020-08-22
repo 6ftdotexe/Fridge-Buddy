@@ -12,7 +12,9 @@ ReactDOM.render(
         domain={domain}
         clientId={clientId}
         redirectUri={window.location.origin}>
-        <Router />
-        
+        <Router>
+            <App />
+        </Router>
     </Auth0Provider>,
-    document.getElementById("root"));
+    document.getElementById("root")
+);
