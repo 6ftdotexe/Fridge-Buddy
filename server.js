@@ -5,15 +5,11 @@ const PORT = process.env.PORT || 3001;
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-// Serve up static assets (usually on heroku)
-//if (process.env.NODE_ENV === "production") {
-//  app.use(express.static("client/build"));
-//}
 
 //serve static assets if in production 
 if (process.env.NODE_ENV === "production") {
   //set static folder   
-  app.use(express.static("client/build"));
+  app.use(express.static(__dirname + '/client/build'));
   app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
