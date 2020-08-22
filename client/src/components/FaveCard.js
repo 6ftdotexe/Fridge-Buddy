@@ -36,7 +36,7 @@ export default function FaveCard() {
           <Card className={classes.root}>
             <CardMedia
               className={classes.media}
-              image="titty"
+              image={pizza}
               title="title from api"
             />
             <CardContent>
