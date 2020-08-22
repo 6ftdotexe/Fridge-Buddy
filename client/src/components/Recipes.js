@@ -35,8 +35,37 @@ export default function Recipes(props) {
             Most Recent Search here!{" "}
           </ListSubheader>
         </GridListTile>
-
-
+        {props.recipes.map((recipe) => (
+          <GridListTile key={recipe.recipe.image}>
+            <img
+              className="recipe__box-img"
+              src={recipe.recipe.image}
+              alt={recipe.recipe.label}
+            />
+            <GridListTileBar
+              title={recipe.recipe.label}
+              subtitle={
+                <span>{recipe.recipe.ingredientLines.length} ingredients </span>
+              }
+              actionIcon={
+                <IconButton
+                  aria-label={`info about ${recipe.recipe.label}`}
+                  className={classes.icon}
+                >
+                  <Link
+                    to={{
+                      pathname: `/recipe/${recipe.recipe.label}`,
+                      state: { recipe: recipe.recipe.label },
+                    }}
+                  >
+                    {" "}
+                    <p>View</p>
+                  </Link>
+                </IconButton>
+              }
+            />
+          </GridListTile>
+        ))}
       </GridList>
     </div>
   );

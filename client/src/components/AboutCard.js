@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function BioCard() {
+export default function AboutCard() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -98,7 +98,7 @@ export default function BioCard() {
             <CardHeader title="Lance Page" />
             <CardContent>
               <Typography paragraph>
-                Write a little about yourself Lace
+                Write a little about yourself Lance
               </Typography>
               <CardActionArea>
                 <Link

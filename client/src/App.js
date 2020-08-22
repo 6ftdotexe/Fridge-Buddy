@@ -1,6 +1,9 @@
+
+// all of this is just place holder as it does not go on the app.js page
+
 import React, { Component } from "react";
-import Grid from "@material-ui/core/grid";
-import Paper from "@material-ui/core/paper";
+import Grid from "@material-ui/core/Grid";
+import Paper from "@material-ui/core/Paper";
 import Image from "./images/tba.jpg";
 import styles from "./styles/mainStyles.css";
 import Form from "./components/Form";
@@ -64,18 +67,18 @@ class App extends Component {
                 <LoginButton />
                 <LogoutButton />
               </Typography>
-              <Button color="inherit">
+              <Button href="" color="inherit">
                 <h3>Home</h3>
               </Button>
-              <Button color="inherit">
+              <Button href="/Favorites" color="inherit">
                 <h3>Favorites</h3>
               </Button>
-              <Button color="inherit">
+              <Button href="/Inventory" color="inherit">
                 <h3>Inventory</h3>
               </Button>
-              <Button color="inherit">
+              <Router-Link to="/About" color="inherit" >
                 <h3>About</h3>
-              </Button>
+              </Router-Link>
             </Toolbar>
           </AppBar>
         </div>
