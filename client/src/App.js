@@ -76,9 +76,9 @@ class App extends Component {
               <Button href="/Inventory" color="inherit">
                 <h3>Inventory</h3>
               </Button>
-              <Router-Link to="/About" color="inherit" >
+              <Button href="/About" color="inherit">
                 <h3>About</h3>
-              </Router-Link>
+              </Button>
             </Toolbar>
           </AppBar>
         </div>
