@@ -6,22 +6,26 @@ import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
 import ListSubheader from "@material-ui/core/ListSubheader";
 import IconButton from "@material-ui/core/IconButton";
+import { blue } from "@material-ui/core/colors";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
+    marginTop: "60px",
+    width: "900px",
     flexWrap: "wrap",
     justifyContent: "space-around",
     overflow: "hidden",
     backgroundColor: theme.palette.background.paper,
   },
   gridList: {
-    width: 700,
+
     height: 700,
   },
   icon: {
     color: "rgba(255, 255, 255, 0.54)",
   },
+
 }));
 //maping over the recipes 'state'
 export default function Recipes(props) {
@@ -36,7 +40,7 @@ export default function Recipes(props) {
           </ListSubheader>
         </GridListTile>
         {props.recipes.map((recipe) => (
-          <GridListTile key={recipe.recipe.image}>
+          <GridListTile className="recipe__box-main" key={recipe.recipe.image}>
             <img
               className="recipe__box-img"
               src={recipe.recipe.image}

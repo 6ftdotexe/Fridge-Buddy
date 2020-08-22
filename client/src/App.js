@@ -7,7 +7,7 @@ import React, { Component } from "react";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Image from "./images/tba.jpg";
-import styles from "./styles/mainStyles.css";
+import "./styles/mainStyles.css";
 import Form from "./components/Form";
 import Recipes from "./components/Recipes";
 import GroceryList from "./components/List";
