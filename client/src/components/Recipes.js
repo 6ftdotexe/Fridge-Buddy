@@ -40,7 +40,7 @@ export default function Recipes(props) {
             Most Recent Search here!{" "}
           </ListSubheader>
         </GridListTile>
-        {props.recipes.map((recipe) => (
+        {props.recipes && props.recipes.map((recipe) => (
           <GridListTile className="recipe__box-main" key={recipe.recipe.image}>
             <img
               className="recipe__box-img"
